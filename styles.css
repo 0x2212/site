@@ -1,0 +1,38 @@
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+body {
+    margin: 0;
+    padding: 20px; /* Added padding for better spacing */
+    height: auto;
+    background: linear-gradient(to bottom, black, blue);
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: fadeIn 1s ease-in; /* Fade-in effect for the body */
+}
+
+p {
+    margin: 20px;
+    max-width: 600px;
+}
+
+img {
+    max-width: 100%; /* Ensures the image does not exceed the width of its container */
+    max-height: 300px; /* Set a maximum height for images */
+    height: auto; /* Maintains the aspect ratio */
+    margin: 10px;
+    animation: fadeIn 1s ease-in; /* Fade-in effect for images */
+}
+
+@media (max-width: 600px) {
+    img {
+        max-height: 200px; /* Adjust maximum height for smaller screens */
+    }
+}
